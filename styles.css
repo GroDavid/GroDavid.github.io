@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+    font-family: "Fantasy", Papyrus, serif;
+    font-size: larger;
+    color: aliceblue;
+    scroll-behavior: smooth;
+    align-items: center;
+    justify-items: center;
+}
+.btn_wrapper{
+    border: none;
+    background-color: none;
+    background: none;
+    width: 100px;
+    margin: 0, auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    font-size: 100px;
+    justify-content: center;
+}
+
+.btn{
+    border: none;
+    border-radius: 10px;
+    background-color: none;
+    background: none;
+    width: 100%;
+    font-size: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn:hover{
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    background: #fc00ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.btn:disabled{
+    transform: scale(0.75);
+    transition: 0.3s ease-in-out;
+    background-color: rgb(32, 32, 32);
+    color: rgb(85, 85, 85);
+}
+
+.battlef{
+    border: none;
+    background-color: black;
+    padding: 5px;
+}
+
+.text{
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+}
+
+.end{
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+    font-size: 60px;
+    background: #ff00cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}

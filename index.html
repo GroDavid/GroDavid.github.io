@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+	        <link rel="stylesheet" href="styles.css">
+            <title>Rock Paper Scissors</title>
+	        <script src="app.js"></script>
+            <link rel="icon" type="image/x-icon" href="favicon (6).ico">
+        </head>
+        <body class="text">
+            <h1>Rock Paper Scissors Game</h1>
+            <p>Your Choice on the left, your opponents choice on the right.</p>
+            </br>
+            <b class="end" id="end"></b>
+            </br>
+            </br>
+            <b>Score:</b>
+            
+            <b id="ourscore">0</b>
+            <b>:</b>
+            <b id="opponentscore">0</b>
+            <b>Rounds Left:</b>
+            <b id="roundNum">0</b>
+	        </br>
+            <img class="battlef" id="RPS" src="empty.png" style="width:400px">
+	        <img class="battlef" id='opponent' src="" style='width:400px'>
+      
+            </br>
+            </br>
+            </br>
+            <div class="btn_wrapper">
+                <button class="btn" type="button" id="rockBtn" onclick="getRndInteger(1, 4, 1);" disabled> <img src="rockF.png" alt="rock"></button>
+                <button class="btn" type="button" id="paperBtn" onclick="getRndInteger(1, 4, 2);" disabled> <img src="paperF.png" alt="paper"></button>
+                <button class="btn" type="button" id="scissorsBtn" onclick="getRndInteger(1, 4, 3);" disabled> <img src="scissorsF.png" alt="scissors"></button>
+                <b> </b>
+                <button class="btn" type="button" id="lessR" style="width: 8rem;" onclick="lessRounds();"><b>-</b></button>
+                <button class="btn" type="button" id="moreR" style="width: 8rem;" onclick="moreRounds();"><b>+</b></button>
+                <b id="rnds">3</b>
+            </div>
+            
+                           
+                
+                <button class="btn" type="button" id="start" onclick="setGameLength();" style="width: 700px; margin: auto; text-align: center;"><b>START</b></button>
+
+
+    </body>
+  </html>
